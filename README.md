@@ -1,4 +1,5 @@
-This Project was forked from: <https://github.com/Ascarbek/suggestbox>
+This Project was forked from: <https://github.com/Ascarbek/suggestbox> <br/> 
+Unfortunately Bower didnt register my forked project even though I created its own release, so I had to upload it this way. 
 
 # Angular SuggestBox
 
