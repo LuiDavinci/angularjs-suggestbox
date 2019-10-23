@@ -1,0 +1,22 @@
+{
+  "name": "angular-suggestbox-luigidavinci",
+  "description": "Extended version of Ascarbek's Suggestbox",
+  "main": "server/server.js",
+  "authors": [
+    "luigidavinci.dev@gmail.com"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dropdown",
+    "clickable",
+    "typeahed"
+  ],
+  "homepage": "https://github.com/LuiDavinci/suggestbox",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
