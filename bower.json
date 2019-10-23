@@ -11,7 +11,7 @@
     "clickable",
     "typeahed"
   ],
-  "homepage": "https://github.com/LuiDavinci/suggestbox",
+  "homepage": "https://github.com/LuiDavinci/angularjs-suggestbox",
   "ignore": [
     "**/.*",
     "node_modules",
