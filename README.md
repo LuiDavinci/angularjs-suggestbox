@@ -29,6 +29,8 @@ bower install angular-suggestbox-luigidavinci
 Live Demo available at (**without added Features**)
 <http://ascarbek.github.io/suggestbox/>
 
+Gif of added Features below.
+
 # Documentation
 
 ## Attributes
