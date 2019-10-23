@@ -21,7 +21,7 @@ Angular SuggestBox is an AngularJS component (directive) which provides highly c
 # Install
 
 ```bash
-bower install angular-suggestbox-luigidavinci
+bower install angularjs-suggestbox-ldv
 ```
 
 # Examples
