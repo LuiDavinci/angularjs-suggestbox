@@ -1,6 +1,6 @@
 {
-  "name": "angular-suggestbox",
-  "version": "0.0.1",
+  "name": "angularjs-suggestbox-ldv",
+  "version": "1.0.0",
   "description": "angular suggestbox",
   "main": "server/server.js",
   "scripts": {
@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ascarbek/suggestbox.git"
+    "url": "git+https://github.com/LuiDavinci/angularjs-suggestbox.git"
   },
   "keywords": [
     "dropdown"
   ],
-  "author": "ascarbek@gmail.com",
+  "author": "luigidavinci.dev@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Ascarbek/suggestbox/issues"
+    "url": "https://github.com/LuiDavinci/angularjs-suggestbox/issues"
   },
-  "homepage": "https://github.com/Ascarbek/suggestbox#readme",
+  "homepage": "https://github.com/LuiDavinci/angularjs-suggestbox#readme",
   "dependencies": {
     "connect": "^3.4.0",
     "del": "^2.1.0",
