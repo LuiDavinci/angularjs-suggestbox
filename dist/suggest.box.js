@@ -325,7 +325,7 @@
             return {
                 restrict: 'E',
                 scope: {
-                    sbSelectionItemData: '@'
+                    sbSelectionItemData: '=?'
                 },
                 link: function($scope, $element) {
 
