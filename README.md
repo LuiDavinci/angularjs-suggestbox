@@ -61,11 +61,20 @@ Gif of added Features below.
 -   If you want to pass the sb-selection-item-data to the function as well, then passed argument name in HTML must be **selectionItemData**, e.g:
 
 ```HTML
-<div az-suggest-box sb-list="vm.names" sb-callback-click-on-item="vm.clickTest(selectionItemData)" sb-model="vm.model1" sb-key-fields="name" sb-search-fields="name" class="suggest-box">
+<div az-suggest-box 
+     sb-list="vm.names" 
+     sb-callback-click-on-item="vm.clickTest(selectionItemData)" 
+     sb-model="vm.model1" 
+     sb-key-fields="name" 
+     sb-search-fields="name" 
+     class="suggest-box">
     <div class="select">
         <div class="input">
             <div sb-selection-item class="selection-item">
-                <sb-click-item class="sbClickItem" sb-selection-item-data="{{s.name}}"> {{s.name}} </sb-click-item>&nbsp;<span sb-remove-item-from-selection class="rem-btn"><i class="fa fa-times"></i></span>
+                <sb-click-item 
+                               class="sbClickItem" 
+                               sb-selection-item-data="{{s.name}}"> {{s.name}} </sb-click-item>&nbsp;
+                <span sb-remove-item-from-selection class="rem-btn"><i class="fa fa-times"></i></span>
             </div>
             <input sb-trigger-area sb-type-ahead tabindex="1">
         </div>
