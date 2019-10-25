@@ -67,7 +67,10 @@
 {
     cursor: pointer;
 }
-
+.sbClickItem
+{
+  cursor: pointer;
+}
 .suggest-box .select input
 {
     flex: 1 1 60px;
