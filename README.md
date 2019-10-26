@@ -73,7 +73,7 @@ Gif of added Features below.
             <div sb-selection-item class="selection-item">
                 <sb-click-item 
                                class="sbClickItem" 
-                               sb-selection-item-data="{{s.name}}"> {{s.name}} </sb-click-item>&nbsp;
+                               sb-selection-item-data="s.name"> {{s.name}} </sb-click-item>&nbsp;
                 <span sb-remove-item-from-selection class="rem-btn"><i class="fa fa-times"></i></span>
             </div>
             <input sb-trigger-area sb-type-ahead tabindex="1">
