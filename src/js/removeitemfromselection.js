@@ -1,16 +1,17 @@
 /**
  * Created by Ascarbek on 02.12.2015.
  */
-(function(){
+(function() {
     'use strict';
 
     angular
         .module('azSuggestBox')
-        .directive('sbRemoveItemFromSelection', [function(){
+        .directive('sbRemoveItemFromSelection', [function() {
             return {
                 restrict: 'AE',
-                link: function(scope, element, attrs){
-                    element.on('click', function(){
+                link: function(scope, element, attrs) {
+                    element.on('click', function() {
+                        scope.$emit('callbackRemovedItem', scope.s);
                         scope.sbRemoveItemFromSelection();
                         scope.$apply();
                     });

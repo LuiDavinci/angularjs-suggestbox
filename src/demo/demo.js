@@ -179,7 +179,11 @@
             }
 
             vm.clickTest = function(name) {
-                alert('You clicked on: ' + name);
+                alert('You clicked on: ' + name.name + ' with email: ' + name.email + ' and ID: ' + name.$listIndex + '!!');
+            }
+            vm.clickTest2 = function(name) {
+                alert('You removed: ' + name.name + ' with email: ' + name.email + ' and ID: ' + name.$listIndex + '!!');
+
             }
         }]);
 })();

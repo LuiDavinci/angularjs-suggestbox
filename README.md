@@ -1,5 +1,5 @@
-This Project was forked from: <https://github.com/Ascarbek/suggestbox> <br/> 
-Unfortunately Bower didnt register my forked project even though I created its own release, so I had to upload it this way. 
+This Project was forked from: <https://github.com/Ascarbek/suggestbox> <br/>
+Unfortunately Bower didnt register my forked project even though I created its own release, so I had to upload it this way.
 
 # Angular SuggestBox
 
@@ -17,6 +17,7 @@ Angular SuggestBox is an AngularJS component (directive) which provides highly c
 -   Items in the input field are now clickable
 -   When choosing items from Dropdown with the mouse, whatever has been typed will be cleared (**dropdown will stay open**)
 -   When choosing items from Dropdown with enter, whatever has been typed will be cleared, (**dropdown will be closed**)
+-   Getting the object when Item is removed, if needed  
 
 # Install
 
@@ -58,22 +59,24 @@ Gif of added Features below.
 
 -   sb-callback-click-on-item | function | optional
 -   sb-selection-item-data | data you want to be passed for the click | optional
--   If you want to pass the sb-selection-item-data to the function as well, then passed argument name in HTML must be **selectionItemData**, e.g:
+-   sb-callback-removed-item | function | optional
+-   If you want to pass the sb-selection-item-data to the function as well, then passed argument name in HTML must be **selectionItemData**, same for removed there it needs to be **removedSelectionItemData** e.g:
 
 ```HTML
-<div az-suggest-box 
-     sb-list="vm.names" 
-     sb-callback-click-on-item="vm.clickTest(selectionItemData)" 
-     sb-model="vm.model1" 
-     sb-key-fields="name" 
-     sb-search-fields="name" 
+<div az-suggest-box
+     sb-list="vm.names"
+     sb-callback-click-on-item="vm.clickTest(selectionItemData)"
+     sb-callback-removed-item="vm.clickTest2(removedSelectionItemData)"
+     sb-model="vm.model1"
+     sb-key-fields="name"
+     sb-search-fields="name"
      class="suggest-box">
     <div class="select">
         <div class="input">
             <div sb-selection-item class="selection-item">
-                <sb-click-item 
-                               class="sbClickItem" 
-                               sb-selection-item-data="s.name"> {{s.name}} </sb-click-item>&nbsp;
+                <sb-click-item
+                               class="sbClickItem"
+                               sb-selection-item-data="s"> {{s.name}} </sb-click-item>&nbsp;
                 <span sb-remove-item-from-selection class="rem-btn"><i class="fa fa-times"></i></span>
             </div>
             <input sb-trigger-area sb-type-ahead tabindex="1">

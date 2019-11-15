@@ -29,7 +29,8 @@
                     sbHighlightedListItemClass: '@?',
                     sbCloseListOnSelect: '=?',
                     sbOnSelectionChange: '&?',
-                    sbCallbackClickOnItem: '&?'
+                    sbCallbackClickOnItem: '&?',
+                    sbCallbackRemovedItem: '&?'
                 },
                 link: function(scope) {
                     scope.init();
@@ -65,7 +66,8 @@
                         $scope.sbCloseListOnSelect = $scope.sbCloseListOnSelect || false;
 
                         $scope.sbOnSelectionChange = $scope.sbOnSelectionChange || function() {};
-                        $scope.sbOnSelectionFunc = $scope.sbOnSelectionFunc || function() {};
+                        $scope.sbCallbackClickOnItem = $scope.sbCallbackClickOnItem || function() {};
+                        $scope.sbCallbackRemovedItem = $scope.sbCallbackRemovedItem || function() {};
 
                         $scope.weSentBroadcast = false;
 
@@ -188,6 +190,14 @@
                         $scope.$on('callback', function(emit, selectionItemData) {
                             $scope.sbCallbackClickOnItem({
                                 selectionItemData: selectionItemData
+                            });
+                        })
+                        /*
+                         * data-binding with sbCallbackRemoveItem and calling function defined in HTML
+                         */
+                        $scope.$on('callbackRemovedItem', function(emit, removedSelectionItemData) {
+                            $scope.sbCallbackRemovedItem({
+                                removedSelectionItemData: removedSelectionItemData
                             });
                         })
 
